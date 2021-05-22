@@ -48,6 +48,7 @@ public class twoFragment extends Fragment implements View.OnClickListener {
 
                 FragmentTransaction transaction_one = getFragmentManager().beginTransaction();
                 transaction_one.replace(R.id.frame_main,new oneFragment());
+                transaction_one.addToBackStack(null);
                 transaction_one.commit();
 
                 break;
@@ -56,6 +57,7 @@ public class twoFragment extends Fragment implements View.OnClickListener {
 
 //                FragmentTransaction transaction_two = getFragmentManager().beginTransaction();
 //                transaction_two.replace(R.id.frame_main,new twoFragment());
+//                transaction_two.addToBackStack(null);
 //                transaction_two.commit();
 
                 break;
@@ -64,6 +66,7 @@ public class twoFragment extends Fragment implements View.OnClickListener {
 
                 FragmentTransaction transaction_three = getFragmentManager().beginTransaction();
                 transaction_three.replace(R.id.frame_main,new threeFragment());
+                transaction_three.addToBackStack(null);
                 transaction_three.commit();
 
                 break;
